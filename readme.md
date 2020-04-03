@@ -8,10 +8,10 @@
 
 ```js
 document.onmousedown = function mdClick(event) {
-    var e = event || window.event || arguments.callee.caller.arguments[0];
-    if (e.button == 2 || e.button == 3) {
-        alert("你愁啥!!!")
-    }
+  var e = event || window.event || arguments.callee.caller.arguments[0];
+  if (e.button == 2 || e.button == 3) {
+    alert("你愁啥!!!");
+  }
 }
 ```
 
@@ -25,13 +25,13 @@ document.oncontextmenu = new Function("return false;");
 
 ```js
 document.onkeydown = document.onkeyup = document.onkeypress = function(event) {
-    var e = event || window.event || arguments.callee.caller.arguments[0];
+  var e = event || window.event || arguments.callee.caller.arguments[0];
 
-    if (e && e.keyCode == 123) {
-            mAlert();
-            e.returnValue = false;
-            return (false);
-    }
+  if (e && e.keyCode == 123) {
+    alert("你愁啥!!!");
+    e.returnValue = false;
+    return (false);
+  }
 }
 
 ```
